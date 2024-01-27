@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="spn.js"></script> -->
+    <script src="spn_logging.js"></script>
+    <title>Simple SPN Example</title>
+</head>
+<body>
+    <div>
+        <h1>Simple SPN Example</h1>
+        <p>This models how a Substitution Permutation Network can encrypt a simple string.<br> </p>
+        <p>This is a poor encryption model and should not be used to secure any data. Demonstration purposes only. <br></p>
+    </div>
+    <div>
+        <p>Enter your message (ASCII characters only).</p>
+        <label for="plaintext">Plaintext: </label>
+        <input type="text" id="plaintext" value="hello"> <br> <br>
+        <button onclick="encrypt()">Encrypt</button>
+    </div>
+    <div>
+        <p>Here is the encrypted cipher text:<br><br></p>
+        <input type="text" id="decryptPlaintext" > <br> <br>
+        
+    </div>
+    <div>
+        <button onclick="decrypt()">Decrypt</button>
+        <p>Here is the decrypted plaintext: <br><br></p>
+        <p id="showDecrypted"><br></p>
+    </div>
+</body>
+</html>
