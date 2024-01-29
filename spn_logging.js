@@ -14,7 +14,7 @@ function encrypt() {
     console.log(`Number of Rounds: ${plaintext.length}`);
 
     for (let j = 0; j < plaintext.length; j++) {
-        //XOR single letter in plaintext with single key char in order
+        //XOR single letter in plaintext with single key char in order - this is my simple encryption mode of operation
         let result = plaintext[j].charCodeAt(0) ^ KEY[j % KEY.length].charCodeAt(0);
         //substitute 4 bits of single plaintext at a time  -- use sub map
         let substituteResult = substitute(result.toString());
